@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRATOSIZ 2k25</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <input type="checkbox" id="toggele-input">
+        <div class="container">
+            <div class="logo">
+                <img src="Logo.png" alt="">
+                <h1>KRATOSIZ<span> 2k25</span></h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- <li><a href="/rules.html">Rules </a></li> -->
+                </ul>
+                <label for="toggele-input"></label>
+                <div class="mobile-nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="">Welcome to <span>KRATOSIZ 2K25</span></h1>
+                <h2>Innovation • Collaboration • Future</h2>
+                <p>Join us for an extraordinary event featuring industry experts, and networking opportunities.</p>
+                <div class="hero-buttons">
+                    <a href="#pricing" class="btn btn-primary">Register Now</a>
+                    <a href="#events" class="btn btn-secondary">View Events</a>
+                </div>
+                <div class="countdown">
+                    <div class="countdown-item">
+                        <span id="days">00</span>
+                        <p>Days</p>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="hours">00</span>
+                        <p>Hrs</p>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="minutes">00</span>
+                        <p>Min</p>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="seconds">00</span>
+                        <p>Sec</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Details Section -->
+    <section id="events" class="events-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Event <span>Details</span></h2>
+                <p>Our Event Lineup is Waiting for You!</p>
+            </div>
+            
+            <div class="event-categories">
+                <!-- Technical Sessions -->
+                <div class="event-category">
+                    <div class="category-header">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>TECHNICAL EVENTS </h3>
+                    </div>
+                    <div class="event-cards">
+                        <div class="event-card">
+                            <div class="event-date">
+                                <!-- <h4>AI and Machine Learning Workshop</h4> -->
+                                <!-- <span class="day">AI and Machine Learning Workshop</span> -->
+                                <!-- <span class="month">March</span> -->
+                            </div>
+                            <div class="event-info">
+                                <h4>CODE IN THE DARK</h4>
+                                <!-- <p class="time"><i class="far fa-clock"></i> 10:00 AM - 12:30 PM</p> -->
+                                <p class="location"><i class="fas fa-map-marker-alt"></i> Data Science Lab</p>
+                                <p class="speaker"><i class="fas fa-user"></i>Mr.T. Saravanan(AP/IT)</p>
+                                <p class="speaker"><i class="fas fa-users"></i>Team Size:2</p>
+                                <p class="description">The event that tests your fluency in syntaxes of the programming languages.</p>
+                                <button class="rules-btn" onclick="openRulesModal('codeinthedark')">
+                                    <i class="fas fa-gavel"></i> View Rules
+                                </button>
+                            </div>
+                        </div>
+                        <div class="event-card">
+                            <div class="event-date">
+                                <!-- <span class="day">28</span>
+                                <span class="month">March</span> -->
+                            </div>
+                            <div class="event-info">
+                                <h4>NEUROVERSE</h4>
+                                <!-- <p class="time"><i class="far fa-clock"></i>10:00 AM - 12:30 PM </p> -->
+                                <p class="location"><i class="fas fa-map-marker-alt"></i> Artificial intelligence Lab </p>
+                                <p class="speaker"><i class="fas fa-user"></i> Mrs.K.Annalakshmi(AP/AI&DS)</p>
+                                <p class="speaker"><i class="fas fa-users"></i>Team Size:2</p>
+                                <p class="description">Explore the AI tools and their usages by the task that are assigned in this events.</p>
+                                <button class="rules-btn" onclick="openRulesModal('neuroverse')">
+                                    <i class="fas fa-gavel"></i> View Rules
+                                </button>
+                            </div>
+                        </div>
+                        <div class="event-card">
+                            <div class="event-date">
+                                <!-- <span class="day">28</span>
+                                <span class="month">March</span> -->
+                            </div>
+                            <div class="event-info">
+                                <h4>STARTUP ARENA</h4>
+                                <!-- <p class="time"><i class="far fa-clock"></i> 10:00 AM - 12:30 PM </p> -->
+                                <p class="location"><i class="fas fa-map-marker-alt"></i> Artificial intelligence classroom</p>
+                                <p class="speaker"><i class="fas fa-user"></i> Mr.Shunmugam Sundharam(AP/IT)</p>
+                                <p class="speaker"><i class="fas fa-users"></i>Team Size:1</p>
+                                <p class="description">Show your leadership capability and entrepreneurship skills through the event.</p>
+                                <button class="rules-btn" onclick="openRulesModal('startuparena')">
+                                    <i class="fas fa-gavel"></i> View Rules
+                                </button>
+                            </div>
+                        </div>
+                        <div class="event-card">
+                            <div class="event-date">
+                                <!-- <span class="day">28</span>
+                                <span class="month">March</span> -->
+                            </div>
+                            <div class="event-info">
+                                <h4>CRISIS CONQUEROR</h4>
+                                <!-- <p class="time"><i class="far fa-clock"></i> 10:00 AM - 12:30 PM</p> -->
+                                <p class="location"><i class="fas fa-map-marker-alt"></i> Information technolgy classroom</p>
+                                <p class="speaker"><i class="fas fa-user"></i> Mr.B.Thevahi(AP/AI&DS)</p>
+                                <p class="speaker"><i class="fas fa-users"></i>Team Size:1</p>
+                                <p class="description">Time to explore the skills that is hidden in yourself to solve realtime problems</p>
+                                <button class="rules-btn" onclick="openRulesModal('crisisconqueror')">
+                                    <i class="fas fa-gavel"></i> View Rules
+                                </button>
+                                <button id="openPdfButton">Problem Statements</button>
+                                <script>
+                                     document.getElementById("openPdfButton").onclick = function() {
+                                     window.open('ps.pdf', '_blank');
+                                     }
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Workshops -->
+                <div class="event-category">
+                    <div class="category-header">
+                        <i class="fas fa-users"></i>
+                        <h3>NON-TECHNICAL EVENTS</h3>
+                    </div>
+                    <div class="event-cards">
+                        <div class="event-card">
+                            <div class="event-date">
+                                <!-- <span class="day">15</span>
+                                <span class="month">April</span> -->
+                            </div>
+                            <div class="event-info">
+                                <h4>REMEMBER ME</h4>
+                                <!-- <p class="time"><i class="far fa-clock"></i> 1:30 PM - 2:30 PM</p> -->
+                                <p class="location"><i class="fas fa-map-marker-alt"></i> Information Technolgy classroom</p>
+                                <p class="speaker"><i class="fas fa-user"></i> Ms.J.Jeraldin Amala Priya</p>
+                                <p class="speaker"><i class="fas fa-users"></i>Team Size:2</p>
+                                <p class="description">Time to test your listening and photographic memory.</p>
+                                <button class="rules-btn" onclick="openRulesModal('rememberme')">
+                                    <i class="fas fa-gavel"></i> View Rules
+                                </button>
+                            </div>
+                        </div>
+                        <div class="event-card">
+                            <div class="event-date">
+                                <!-- <span class="day">16</span>
+                                <span class="month">April</span> -->
+                            </div>
+                            <div class="event-info">
+                                <h4>TREASURE HUNT</h4>
+                                <!-- <p class="time"><i class="far fa-clock"></i> 1:30 PM - 2:30 PM</p> -->
+                                <p class="location"><i class="fas fa-map-marker-alt"></i> Auditorium</p>
+                                <p class="speaker"><i class="fas fa-user"></i> Mrs.S.Sumathi</p>
+                                <p class="speaker"><i class="fas fa-users"></i>Team Size:3-4</p>
+                                <p class="description">Learn,find,think out of the box. </p>
+                                <button class="rules-btn" onclick="openRulesModal('treasurehunt')">
+                                    <i class="fas fa-gavel"></i> View Rules
+                                </button>
+                            </div>
+                        </div>
+                        <div class="event-card">
+                            <div class="event-date">
+                                <!-- <span class="day">17</span>
+                                <span class="month">April</span> -->
+                            </div>
+                            <div class="event-info">
+                                <h4>LAWYER GAME</h4>
+                                <!-- <p class="time"><i class="far fa-clock"></i> 1:30 PM - 2:30 PM</p> -->
+                                <p class="location"><i class="fas fa-map-marker-alt"></i>Artificial Intelligence classroom</p>
+                                <p class="speaker"><i class="fas fa-user"></i> Mrs.S.Kayathri</p>
+                                <p class="speaker"><i class="fas fa-users"></i>Team Size:3-4</p>
+                                <p class="description">Don't be too straight and just think differently.</p>
+                                <button class="rules-btn" onclick="openRulesModal('lawyergame')">
+                                    <i class="fas fa-gavel"></i> View Rules
+                                </button>
+                            </div>
+                        </div>
+                        <div class="event-card">
+                            <div class="event-date">
+                                <!-- <span class="day">17</span>
+                                <span class="month">April</span> -->
+                            </div>
+                            <div class="event-info">
+                                <h4>REVERSE CHARADS</h4>
+                                <!-- <p class="time"><i class="far fa-clock"></i> 1:30 PM - 2:30 PM</p> -->
+                                <p class="location"><i class="fas fa-map-marker-alt"></i> Artificial Intelligence classroom</p>
+                                <p class="speaker"><i class="fas fa-user"></i>Mrs.S.Jeya Lakshmi</p>
+                                <p class="speaker"><i class="fas fa-users"></i>Team Size:4</p>
+                                <p class="description">Just have a fun with our buddies.</p>
+                                <button class="rules-btn" onclick="openRulesModal('reversecharads')">
+                                    <i class="fas fa-gavel"></i> View Rules
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-category">
+                    <div class="category-header">
+                        <!-- <i class="fas fa-laptop-code"></i> -->
+                        <h3>SPECIAL EVENTS</h3>
+                    </div>
+                    <div class="event-cards">
+                        <div class="event-card">
+                            <div class="event-date">
+                                <!-- <span class="day">28</span>
+                                <span class="month">March</span> -->
+                            </div>
+                            <div class="event-info">
+                                <h4>FUN ZONE</h4>
+                                <!-- <p class="time"><i class="far fa-clock"></i> 10:00 AM - 2:30 PM</p> -->
+                                <p class="location"><i class="fas fa-map-marker-alt"></i>Auditorium</p>
+                                <p class="speaker"><i class="fas fa-user"></i>Mr.T. Saravanan(AP/IT) </p>
+                                <p class="description">Step into the Fun Zone—where games, laughter, and non-stop excitement collide! Whether you're racing, competing, or just goofing around, it's all about fun, thrills, and making memories!.</p>
+                            </div>
+                        </div>
+                        <div class="event-card">
+                            <div class="event-date">
+                                <!-- <span class="day">28</span>
+                                <span class="month">March</span> -->
+                            </div>
+                            <div class="event-info">
+                                <h4>FIT ZONE</h4>
+                                <!-- <p class="time"><i class="far fa-clock"></i> 10:00 AM - 2:30 PM</p> -->
+                                <p class="location"><i class="fas fa-map-marker-alt"></i> Auditorium</p>
+                                <p class="speaker"><i class="fas fa-user"></i> Mr.Shunmugam Sundharam(AP/IT)</p>
+                                <p class="description">Push your limits and feel the burn in the Fit Zone! From arm wrestling to pushups, it’s the ultimate place to challenge your strength, power, and endurance!.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Rules Modals -->
+        <div id="rulesModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeRulesModal()">&times;</span>
+                <div class="modal-header">
+                    <h2 id="modalTitle">Event Rules</h2>
+                </div>
+                <div id="modalBody">
+                    <!-- Rules content will be inserted here dynamically -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>PRICING <span>PLAN</span></h2>
+                <p>Around the Clock, All Access—Experience the Symposium Anytime!</p>
+            </div>
+            
+            <div class="pricing-cards">
+                <!-- <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>Student Pass</h3>
+                        <div class="price">$49</div>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Access to all sessions</li>
+                            <li><i class="fas fa-check"></i> Symposium materials</li>
+                            <li><i class="fas fa-check"></i> Lunch for all 3 days</li>
+                            <li><i class="fas fa-times"></i> Workshop participation</li>
+                            <li><i class="fas fa-times"></i> Networking dinner</li>
+                            <li><i class="fas fa-times"></i> Certificate of participation</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Register Now</a>
+                    </div>
+                </div> -->
+                
+                <div class="pricing-card">
+                    <div class="ribbon">Get us</div>
+                    <div class="card-header">
+                        <h3>Unlock the Adventure — Your Entry Pass Awaits!</h3>
+                        <div class="price">₹250</div>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Access to both Technical & Non-Technical Events</li>
+                            <li><i class="fas fa-check"></i> Have fun at  fun zone & fit zone</li>
+                            <li><i class="fas fa-check"></i> Snack Time! A Little Taste Before the Big Meal!</li>
+                            <li><i class="fas fa-check"></i> Refuel and Recharge—Lunch is Included</li>
+                          
+                            <!-- <li><i class="fas fa-check"></i> Networking dinner</li> -->
+                            <li><i class="fas fa-check"></i> Certificate of Participation</li>
+                        </ul>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeobnuH60-oZ12CwpUwAJNCpZ4dTHpi4MfO-biJpBR0Z1J9-A/viewform?usp=header" class="btn btn-primary">UNLOCK YOUR ACCESS</a>
+                    </div>
+                </div>
+                
+                <!-- <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>VIP Pass</h3>
+                        <div class="price">$249</div>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Access to all sessions</li>
+                            <li><i class="fas fa-check"></i> Symposium materials</li>
+                            <li><i class="fas fa-check"></i> Premium meals all 3 days</li>
+                            <li><i class="fas fa-check"></i> Priority workshop registration</li>
+                            <li><i class="fas fa-check"></i> Exclusive VIP networking events</li>
+                            <li><i class="fas fa-check"></i> Personalized certificate</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Register Now</a>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>About KRATOSIZ 2K25</h3>
+                    <p>The KRATOSIZ2K25 Symposium blends tech, teamwork, and fun for an unforgettable experience where ideas become reality. Join us and make your mark!</p>
+                    <div class="social-links">
+                        <!-- <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a> -->
+                        <a href="https://www.instagram.com/kratosiz2k25?igsh=MTVicnJ0OHAzM2wxaA%3D%3D" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <!-- <a href="#"><i class="fab fa-linkedin-in"></i></a> -->
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <!-- <li><a href="#">Privacy Policy</a></li> -->
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <a href="https://maps.app.goo.gl/w7AxFLYeL5oXGE6F9" target="_blank"><p><i class="fas fa-map-marker-alt"></i>P. S. R. Engineering College, Sivakasi</p></a>
+                    <a href="tel:+919080394879"> <p><i class="fas fa-phone"></i>+91 90803 94879 (C.Nithish Kumar) </p></a>
+                    <a href="tel:+919566764352"> <p><i class="fas fa-phone"></i>+91 95667 64352 (V.Narendar)</p></a>
+                    <a href="tel:+916379054707"> <p><i class="fas fa-phone"></i>+91 63790 54707 (A.Dickson Shyam Kumar)</p></a>
+                    <a href="mailto:ainexus.innovation@gmail.com"><p><i class="fas fa-envelope"></i> kratosiz2k25@psr.edu.in</p></a>
+                </div>
+                
+                <!-- <div class="footer-newsletter">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter for the latest updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div> -->
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 kratosiz2k25. All Rights Reserved.</p>
+                <div class="ainexus-credit">
+                    <div class="dev-icon">
+                        <div class="tooltip">Designed & Developed by</div>
+                    </div>
+                    <a href="https://ainexus.in/" target="_blank" class="ainexus-link">
+                        <span class="main-text">AI NEXUS</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+
+</body>
+</html>
